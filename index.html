@@ -128,6 +128,149 @@
 	  position: relative;
 	  z-index: 1;
 	}
+<<<<<<< HEAD
+	
+		#menu #operating {
+  background: url('operating.jpg') 0 0 no-repeat;
+  background-size: cover;
+  color: #555;
+  display: inline-block;
+   padding-left: 15px;
+  position: relative;
+  z-index: 1;
+}
+#menu #operating:before {
+  background-image: inherit;
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  content: '';
+  height: 100%;
+  left: 0px;
+  opacity: 0.2;
+  position: absolute;
+  top: 0px;
+  width: 100%;
+  z-index: -1;
+  -webkit-transition: opacity 300ms;
+  transition: opacity 300ms;
+}
+#menu #operating:hover:before {
+  opacity: 0;
+  color: #000000;
+}
+
+#menu #offline {
+  background: url('offline.jpg') 0 0 no-repeat;
+  background-size: cover;
+  color: #555;
+  display: inline-block;
+   padding-left: 15px;
+  position: relative;
+  z-index: 1;
+}
+#menu #offline:before {
+  background-image: inherit;
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  content: '';
+  height: 100%;
+  left: 0px;
+  opacity: 0.4;
+  position: absolute;
+  top: 0px;
+  width: 100%;
+  z-index: -1;
+  -webkit-transition: opacity 300ms;
+  transition: opacity 300ms;
+}
+#menu #offline:hover:before {
+  opacity: 0;
+  color: #000000;
+}
+
+#menu #shutdown {
+  background: url('shutdown.jpg') 0 0 no-repeat;
+  background-size: cover;
+  color: #555;
+  display: inline-block;
+   padding-left: 15px;
+  position: relative;
+  z-index: 1;
+}
+#menu #shutdown:before {
+  background-image: inherit;
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  content: '';
+  height: 100%;
+  left: 0px;
+<<<<<<< HEAD
+  opacity: 0.2;
+=======
+  opacity: 0.3;
+>>>>>>> master
+  position: absolute;
+  top: 0px;
+  width: 100%;
+  z-index: -1;
+  -webkit-transition: opacity 300ms;
+  transition: opacity 300ms;
+}
+#menu #shutdown:hover:before {
+  opacity: 0;
+  color: #000000;
+}
+
+#menu #construction {
+  background: url('construction.jpg') 0 0 no-repeat;
+  background-size: cover;
+  color: #555;
+  display: inline-block;
+   padding-left: 15px;
+  position: relative;
+  z-index: 1;
+}
+#menu #construction:before {
+  background-image: inherit;
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  content: '';
+  height: 100%;
+  left: 0px;
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+  opacity: 0.4;
+=======
+  opacity: 0.3;
+>>>>>>> master
+=======
+  opacity: 0.2;
+>>>>>>> origin/gh-pages
+=======
+  opacity: 0.2;
+>>>>>>> origin/gh-pages
+=======
+  opacity: 0.3;
+>>>>>>> master
+  position: absolute;
+  top: 0px;
+  width: 100%;
+  z-index: -1;
+  -webkit-transition: opacity 300ms;
+  transition: opacity 300ms;
+}
+#menu #construction:hover:before {
+  opacity: 0;
+  color: #000000;
+}
+
+=======
 	#menu #construction:before {
 	  background-image: inherit;
 	  background-position: 50% 50%;
@@ -149,6 +292,7 @@
 	  color: #000000;
 	}
     
+>>>>>>> master
 
 	
 	.cartodb-layer-selector-box,
@@ -171,7 +315,8 @@
     // initiate leaflet map
     map = new L.Map('map', { 
       center: [35, 10],
-      zoom: 3
+      zoom: 3,
+		scrollwheel: false
     })
 
     L.tileLayer('http://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}.png', {
