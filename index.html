@@ -176,7 +176,8 @@
     // initiate leaflet map
     map = new L.Map('map', { 
       center: [35, 0],
-      zoom: 3
+      zoom: 3,
+			scrollWheelZoom: false
     })
 
     L.tileLayer('http://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}.png', {
